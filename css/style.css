@@ -85,35 +85,16 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 6px solid var(--main-color);
+  border: 5px solid var(--main-color);
   border-left-color: transparent;
-  animation: moveRight 1s infinite linear;
+  animation: move 1s infinite linear;
+  background-color: #ddd;
 }
 
-.loading  div::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 6px solid var(--secand-color);
-  border-left-color: transparent;
-  animation: moveLeft 5s infinite linear;
-}
-
-@keyframes moveRight {
+@keyframes move {
   from {
     transform: rotate(-360deg);
   }
-}
-
-@keyframes moveLeft {
-  from {
-    transform:translate(-50%,-50%) rotate(-360deg);
-  } 
 }
 /* start Global Rule */
 /* start header */
