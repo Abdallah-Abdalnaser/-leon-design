@@ -81,12 +81,6 @@ header .contener .links {
   position: relative;
   z-index: 1;
 }
-header .contener .links .icon:hover span:nth-child(2) {
-  width: 100%;
-}
-header .contener .links:hover ul {
-  display: block;
-}
 header .contener {
   display: flex;
   justify-content: space-between;
